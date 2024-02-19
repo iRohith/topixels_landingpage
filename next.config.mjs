@@ -2,6 +2,8 @@
 const nextConfig = {
   output: "export",
   images: {
+    loader: "custom",
+    loaderFile: "./src/lib/img-loader.ts",
     dangerouslyAllowSVG: true,
     remotePatterns: [
       {
