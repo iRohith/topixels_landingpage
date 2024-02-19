@@ -19,7 +19,10 @@ export default function Navbar() {
             <DarkModeToggle />
             <Link
               href="#"
-              className={cn(buttonVariants(), "flex flex-row mt-6")}
+              className={cn(
+                buttonVariants(),
+                "flex-row min-w-fit hidden md:flex"
+              )}
             >
               Generate
               <ChevronRight className="ml-2 h-5 w-5" />
